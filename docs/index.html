@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8" />
+<title></title>
+    
+</head>
+<body><style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+    ul li{
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color:#333;
+    }
+    #menu {
+        font:bold 16px "malgun gothic";
+        width:450px;
+        height:50px;
+        background: #e0dddd;
+        color:black;
+        line-height: 50px; 
+        margin:0 auto;
+        text-align: center;
+    }
+
+    #menu > ul > li {
+        float:left;
+        width:140px;
+        position:relative;
+    }
+    #menu > ul > li > ul {
+    width:130px;
+    display:none;
+    position: absolute;
+    font-size:14px;
+    background: rgb(229, 243, 248);
+    }
+    #menu > ul > li:hover > ul {
+        display:block;
+    }
+    </style>
+<div id="menu">
+	<ul>
+		<li><a href="#">Person-in-place</a>
+			<ul>
+				<li><a href="#Abstract">Abstract</a></li>
+				<li><a href="#method">Method</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Qualitative Result</a>
+			<ul>
+				<li><a href="#Quantitative_results_1">Paper Result 1</a></li>
+				<li><a href="#Quantitative_results_2">Paper Result 2</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Visualization</a>
+			<ul>
+				<li><a href="#Visualization Results">Paper Results</a></li>
+				<li><a href="#add_Visualization Results">Supple Results</a></li>
+				<li><a href="#GUI_tutorial">GUI & Tutorial & Demo</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+    <h1><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman'">Person in Place: Generating Associative Skeleton-Guidance Maps for Human-Object Interaction Image Editing</p></h1>
+    <br/>
+    <h2><p style="color:gray;font-size:0.9em;text-align:center; font-family: 'Times New Roman'">Anonymous CVPR submission</p></h2>
+    <br/>
+    <h2><p style="color:gray;font-size:0.7em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Paper ID : 8271</p></h2>
+    <br/>
+    <div style="border: 2px solid white; border-radius: 15px; padding: 10px;width:1100px; margin:auto"></div>
+    <!--
+    <center>
+        <a href="Person-in-Place_8271.pdf">
+            <img src="pdf_img.png" width="40" alt="Main Paper"></a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <a href="https://anonymous.4open.science/r/Person-in-Place-4FF0">
+                <img src="github_img.png" width="50" alt="Main Code"></a>
+        
+    </center>
+    -->
+    
+
+    <br/>
+    <center>
+    <img src="CVPR_2024_jpg/our_results_total_v6.jpg" alt="My Image" width="1000">
+    <h3><p style="font-size:0.9em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">
+        <strong>Human-object interaction (HOI) image editing using generated skeleton:</strong>
+        We synthesize human interacting with objects for an initial image using the automated object-interactive diffuser. 
+        <strong>(a)</strong> an initial image to edit. <strong>(b)</strong> the sequential process of synthesizing human image with object-interactive skeletons using textual conditions. 
+        <strong>(c)</strong> a final result image with the skeleton map. Our method generates the high quality object interactive skeleton map, 
+        and it can easily plug in to the skeleton guided generative model for HOI image editing.
+        <br/>
+        <br/>
+    </p></h3>
+    <br/><p id="GUI_tutorial">
+    </div>
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Our GUI & Demo & Tutorial Code !</h1>
+        <br/>
+    <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+    
+        <center><img src="CVPR_2024_jpg/GUI.gif" alt="My Image" width="500"><img src="CVPR_2024_jpg/GUI_1.gif" alt="My Image" width="500"></center>
+        <center><img src="CVPR_2024_jpg/output.gif" alt="My Image" width="500"><img src="CVPR_2024_jpg/output1.gif" alt="My Image" width="500"></center>
+        <center><img src="CVPR_2024_jpg/output2.gif" alt="My Image" width="500"><img src="CVPR_2024_jpg/output3.gif" alt="My Image" width="500"></center>
+    
+        We plan to provide a User-Friendly Object Interactive Skeleton Generator & GUI for Human-Object-Interaction (HOI) image editing, along with tutorials and demo code for user convenience.
+    </p></h3>
+    </div>
+    </div>
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Human-Object-Interaction Image Editing</h1>
+        <br/>
+    <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">Traditional image editing technologies have seen significant advancements, 
+        but they face limitations in the realm of Human-Object-Interaction (HOI) image editing. 
+        However, recent developments introduce technologies utilizing Skeleton-guidance maps (e.g., ControlNet, HumanSD, UNI-contronet, T2I-Adapter, etc.) to generate or edit images, 
+        seamlessly performing HOI image editing. Nevertheless, there is currently no existing technology for generating or editing Object interactive Skeletons, 
+        and we propose this for the first time.</p></h3>
+        <br/><p id="Abstract">
+    </div>
+    </div>
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Abstract</p></h2>
+    <br/>
+    <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">Recently, there were remarkable advances in image editing tasks in various ways. 
+        Nevertheless, existing image editing models are not designed for Human-Object Interaction (HOI) image editing. 
+        One of these approaches (e.g. ControlNet)  employs the skeleton guidance to offer precise representations of human, showing better results in HOI image editing. 
+        However, using conventional methods, manually creating HOI skeleton guidance is necessary. 
+        This paper proposes the object interactive diffuser with associative attention that considers both the interaction with objects and the joint graph structure, 
+        automating the generation of HOI skeleton guidance. Additionally, we propose the HOI loss with novel scaling parameter, demonstrating its effectiveness in generating skeletons that interact better. 
+        To evaluate generated object-interactive skeletons, we propose two metrics, top-N accuracy and skeleton probabilistic distance. 
+        Our framework integrates object interactive diffuser that generates object-interactive skeletons with previous methods, demonstrating the outstanding results in HOI image editing. 
+        Finally, we present potentials of our framework beyond HOI image editing, as applications to human-to-human interaction, skeleton editing, and 3D mesh optimization.</p></h3>
+        <br/><p id="method">
+    </div>
+    </div>
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+    <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+        <br/>
+    <h2><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">Person-in-Place Framework</p></h2>
+    <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        <strong>Overview of proposed framework</strong>: Our proposed framework uses a cropped image from a person bounding box as an input and the object bounding box. 
+        <strong>(Left)</strong> These are used to extract a image and an object features.
+            <strong>(Middle)</strong> The extracted features are used as a image and object conditioning respectively in our object interactive diffuser. 
+            Using these conditionings, the object interactive diffuser comes to see the object-joint and joint-joint relationships then generate a denoised skeleton based on diffusion process. 
+            (<strong>Right</strong>) The synthesized skeleton together with a masked image using a person bounding box is used to edit image with off the shelf inpainting model.
+    </p></h3>
+    
+        <br/>
+        <img src="CVPR_2024_jpg/main_framework_v1.jpg" alt="My Image" width="1000">
+        <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        The denoise process first estimate the correlation between the object and the joints, and then it considers the relationship between the joint themselves using a GNN. 
+        After that, the object conditioning is used to predict which joints are most likely to interact with the object. 
+        In this figure, the pixels located inside the snowboard have higher attention score on joints such as hands or foot than others.
+        
+        This figure visualizes which joint has the greatest association with features correspond to selected pixels in the image colored red, yellow and orange. 
+        The size of the circle indicates the degree of association.
+    
+    </p></h3>
+        <center><img src="CVPR_2024_jpg/main_module_V4.jpg" alt="My Image" width="500"><img src="CVPR_2024_jpg/skeleton_attention.jpg" alt="My Image" width="500"></center>
+        <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        
+        </p></h3>
+            <br/>
+
+
+    <br/><p id="Quantitative_results_1"></p>
+    </div>
+    </div>
+
+
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h2><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">Quantitative HOI image editing Results</p></h2>
+    <br/>
+    
+        <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+            <strong>results comparing our framework to the previous image editing model: </strong>
+            Our framework outperforms others on the metrics indicating image quality FID, 
+            KID and metric measuring prompt alignment to image CS. 
+            Two approaches exist in the realm of editing models: Text-Free editing models and Text-Guided editing models. 
+            We belong to the Text-Guided editing model category, and our performance analysis indicates that utilizing our Object Interactive Skeleton for inpainting yields the best results. 
+            Moreover, our approach demonstrates superior performance compared to the upgraded version of the Stable Diffusion-based method, SDXL-inpainting
+            <br/>
+        <br/>
+        <center><img src="CVPR_2024_jpg/result_qunti.jpg" alt="My Image" width="500"></center>
+
+
+        <br/><p id="Quantitative_results_2"></p>
+    </div>
+    </div>
+
+
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h2><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">Quantitative Object Interactive Skeleton Results</p></h2>
+    <br/>
+    Table 2 provides a comparison of results for the proposed loss scale. 
+    Applying our loss scale shows improvement in object interactive skeleton evaluation performance across all models. 
+    Additionally, Table 3 presents a performance comparison of the proposed Associative Attention mechanism. 
+    It is evident that our method significantly outperforms modules such as conventional attention or attention + GNN (Graph Neural Network).
+        <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+            <br/>
+        <br/>
+        <center><img src="CVPR_2024_jpg/result_qunti_v1.jpg" alt="My Image" width="500"><img src="CVPR_2024_jpg/result_qunti_v2.jpg" alt="My Image" width="500"></center>
+
+<br/><p id="Visualization Results"></p>
+    <br/>
+    </div>
+    </div>
+
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h2><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">Visualization Results</p></h2>
+    <br/>
+    <img src="CVPR_2024_jpg/main_results_v1.jpg" alt="My Image" width="1000">
+    
+    <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        <strong>(Top)</strong>: Qualitative results when generating a single person using CoModGAN, 
+        Instruct-Pix2Pix, Stable-Diffusion Inpainting (SD-Inpainting). 
+        <strong>(Top left)</strong> Incomplete or no humans are generated using other models. 
+        <strong>(Top right)</strong> Even though humans are generated, the misaligned or non-interactive humans are synthesized. 
+        <strong>(Bottom)</strong> : Demonstration of image editing with SD-inpainting, SDXL-inpainting and ours. 
+        Other models did not generate a human even using a guided skeleton.        
+    <br/>
+
+    <br/><p id="add_Visualization Results"></p>
+    <br/>
+    </div>
+    </div>
+
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h2><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">Additional Visualization Results</p></h2>
+    <br/>
+    <img src="CVPR_2024_jpg/result_skt.jpg" alt="My Image" width="1000">
+    
+    <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        <strong>Comparison between attention mechanism and associative attention mechanism:</strong> 
+        By employing our associative attention mechanism, the overall shape of skeleton becomes more natural as shown in images of a baby sitting on the bed or a man sitting on the yacht. 
+        Moreover, our associative attention mechanism generates more object-interactive poses, 
+        e.g. swinging, sitting, typing, as joints of the skeleton approach the object through propagation process. 
+        Moreover, even in scenarios with multiple objects, a natural skeleton is generated while interacting with the specified object.  
+        
+    <br/>
+    <img src="CVPR_2024_jpg/test_input_supp_2.jpg" alt="My Image" width="1000">
+    <img src="CVPR_2024_jpg/test_input_supp_3.jpg" alt="My Image" width="1000">
+    <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        <strong>Comparion of CoModGAN, Instruct-Pix2Pix, SD-Inpainting and Ours:</strong>
+        We use a person bounding box, an object bounding box and a text prompt for HOI image editing. 
+        In most cases of the visualization results, CoModGAN and Instruct-Pix2Pix perform poorly in generating natural humans. 
+        Our results exhibit more object-interactive images than SD-Inpainting, as shown in cases of a woman with wearing a polka-dotted umbrella or a man surfing with the waves. 
+        For an example, in the case of 'A woman in pajamas using her laptop on the stove top in the kitchen', 
+        CoModGAN and SD-Inpainting did not generate even a human shape. Instruct-Pix2Pix failed to maintain the original image, 
+        while our method generated a natural woman that matches the text prompt.
+        <img src="CVPR_2024_jpg/test_input_supp_5.jpg" alt="My Image" width="1000">
+        <img src="CVPR_2024_jpg/test_input_supp_6.jpg" alt="My Image" width="1000">
+        <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        <strong>Performing on multi-people images:</strong> 
+        This figure shows HOI-edited images of multiple people using SD-Inpainting, SDXL-Inpainting and Ours. 
+        In the first and second column, SD-Inpainting and SDXL-Inpainting fail to generate a human when a person bounding box is provided in a small size. 
+        On the other hand, our method generates natural HOI images regardless of a size of a person bounding box, 
+        since it utilizes object-interactive skeletons. As shown in the fourth column, 
+        people sitting on the sofa and children sitting on the sofa are generated naturally with our method.
+</body>
+</html>
